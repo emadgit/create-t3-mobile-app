@@ -3,7 +3,9 @@ A boilerplate based on [T3 Stack](https://create.t3.gg/) with support to make mo
 
 ## What's next? How do I make an app with this?
 
-This is basically bootstrapped with `create-t3-app` so for all T3 part you can follow the official [Documentation](https://create.t3.gg/). In addition, this repo added support to generate hybrid iOS and Android apps using [Capacitorjs](https://capacitorjs.com/).
+This repo is basically bootstrapped with `create-t3-app` so for all T3 related parts, you can follow the official [Documentation](https://create.t3.gg/) and if you are not familiar with T3, I suggest to watch Theo's great [Tutorial](https://youtu.be/YkOSUVzOAA4).
+
+In addition, this repo added support to generate hybrid iOS and Android apps using [Capacitorjs](https://capacitorjs.com/).
 
 <div style="display:flex; flex-direction:row; padding: 5px;">
   <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
@@ -27,4 +29,16 @@ if you need to sync your changes from your T3 app to your mobile projects, follo
 - For ios run `pnpm sync:ios`
 
 Now your latest changes is ready to run in Android Studio or Xcode!
+
+# Capacitor configuration
+
+There's a `capacitor.config.ts` file in the root folder where you can set high-level options for Capacitor tooling. Here are some of the common configs you can use: 
+
+- `appId` -> The unique identifier of your packaged app. This is also known as the Bundle ID in iOS and the Application ID in Android. It must be in reverse domain name notation, generally representing a domain name that you or your company owns.
+- `appName` -> The human-friendly name of your app. This should be what you'd see in the App Store, but can be changed after within each native platform after it is generated.
+- `webDir` -> The directory of your compiled web assets. This directory should contain the final `index.html` of your app.
+- `loggingBehavior` -> Can be one the following: `'none' | 'debug' | 'production'`. The build configuration (as defined by the native app) under which Capacitor will send statements to the log system. This applies to log statements in native code as well as statements redirected from JavaScript. Enabling logging will let statements render in the Xcode and Android Studio windows but can leak information on device if enabled * in released builds.
+- `androidScheme` -> Configure the local scheme on Android. Default is `http`.
+
+For more information see the [Capacitor Docs](https://capacitorjs.com/docs/config#schema)
 
