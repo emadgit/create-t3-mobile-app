@@ -1,5 +1,5 @@
 # Create T3 Mobile App
-A template repo based on [T3 Stack](https://create.t3.gg/) with support to make mobile apps for iOS and Android. 
+A template repo based on [T3 Stack](https://create.t3.gg/) with support to make mobile apps for iOS and Android using [Capacitorjs](https://capacitorjs.com/). 
 
 ## What's next? How do I make an app with this?
 
