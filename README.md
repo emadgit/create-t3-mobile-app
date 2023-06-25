@@ -8,7 +8,6 @@ This repo is basically bootstrapped with `create-t3-app` so for all T3 related p
 In addition, this repo added support to generate hybrid iOS and Android apps using [Capacitorjs](https://capacitorjs.com/).
 
 <div style="display:flex; flex-direction:row; padding: 5px;">
-  <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
 </div>
 
@@ -42,3 +41,13 @@ There's a `capacitor.config.ts` file in the root folder where you can set high-l
 
 For more information see the [Capacitor Docs](https://capacitorjs.com/docs/config#schema)
 
+# tRPC notes
+
+For communicate with the server from the mobile apps, Next.js application with tRPC must be deployed, then you need to set your server url domain in `capacitor.config.ts`, for example:
+
+```
+server: {
+    androidScheme: "https",
+    url: "YOURAPP.vercel.app",
+  },
+```
