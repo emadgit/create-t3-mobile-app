@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-             Creat T3 <span className="text-[hsl(280,100%,70%)]">Mobile</span> App
+            Create T3 <span className="text-[hsl(280,100%,70%)]">Mobile</span> App
           </h1>
         </div>
       </main>
