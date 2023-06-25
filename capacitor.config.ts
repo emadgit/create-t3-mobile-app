@@ -7,8 +7,8 @@ const config: CapacitorConfig = {
   server: {
     androidScheme: "https",
     // For communicate with the server Next.js application with tRPC must be deployed, for example if you are using
-    // Vercel, url should be set to the domain YOURAPP.vercel.app
-    url: "",
+    // Vercel, url should be set to the domain https://YOURAPP.vercel.app
+    url: "https://YOUR_APP.vercel.app",
   },
 };
 

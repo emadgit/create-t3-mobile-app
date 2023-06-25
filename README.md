@@ -9,11 +9,31 @@ In addition, this repo added support to generate hybrid iOS and Android apps usi
 
 <div style="display:flex; flex-direction:row; padding: 5px;">
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
+    <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
+
 </div>
 
 So you do your usual T3 development to make your awesome app, once you'r happy with it, maybe you wanna publish your app also for mobile users. Here are the steps you need to do: 
 
-You need to run `sudo gem install cocoapods` in order to be able to use Capacitor on iOS. Once cocoapods installed, then follow these steps:
+You need to run `sudo gem install cocoapods` in order to be able to use Capacitor on iOS.
+
+For communicate with the server from the mobile apps, Next.js application with tRPC must be deployed, then you need to set your server url domain in `capacitor.config.ts` file. Here is an example for the config file:
+
+```
+const config: CapacitorConfig = {
+  appId: "com.example.myt3mobileapp",
+  appName: "myt3mobileapp",
+  webDir: "out",
+  server: {
+    androidScheme: "https",
+    // For communicate with the server Next.js application with tRPC must be deployed, for example if you are using
+    // Vercel, url should be set to the domain https://YOURAPP.vercel.app
+    url: "https://YOUR_APP.vercel.app",
+  },
+};
+```
+
+Now, you are ready to build the mobile apps, you can follow these steps to do so:
 
 - `pnpm build:mobile` -> This will generate an `out` folder.
 - For Android, you need to run `pnpm make:android` -> This will create an `android` folder which is a nice and clean android project you can use in Android studio.
@@ -40,21 +60,3 @@ There's a `capacitor.config.ts` file in the root folder where you can set high-l
 - `androidScheme` -> Configure the local scheme on Android. Default is `http`.
 
 For more information see the [Capacitor Docs](https://capacitorjs.com/docs/config#schema)
-
-# tRPC notes
-
-For communicate with the server from the mobile apps, Next.js application with tRPC must be deployed, then you need to set your server url domain in `capacitor.config.ts`. here is an example for the config file:
-
-```
-const config: CapacitorConfig = {
-  appId: "com.example.myt3mobileapp",
-  appName: "myt3mobileapp",
-  webDir: "out",
-  server: {
-    androidScheme: "https",
-    // For communicate with the server Next.js application with tRPC must be deployed, for example if you are using
-    // Vercel, url should be set to the domain YOURAPP.vercel.app
-    url: "YOURAPP.vercel.app",
-  },
-};
-```
