@@ -14,8 +14,8 @@
     "make:ios": "cap add ios",
     "open:android": "cap open android",
     "open:ios": "cap open ios",
-    "sync:android": "cap sync android",
-    "sync:ios": "cap sync ios"
+    "sync:android": "pnpm build:mobile && cap sync android",
+    "sync:ios": "pnpm build:mobile && cap sync ios"
   },
   "dependencies": {
     "@capacitor/android": "^5.0.5",
