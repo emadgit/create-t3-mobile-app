@@ -1,5 +1,5 @@
 # Create T3 Mobile App
-A boilerplate based on [T3 Stack](https://create.t3.gg/) with support to make mobile apps for iOS and Android. 
+A template repo based on [T3 Stack](https://create.t3.gg/) with support to make mobile apps for iOS and Android. 
 
 ## What's next? How do I make an app with this?
 
@@ -59,3 +59,7 @@ There's a `capacitor.config.ts` file in the root folder where you can set high-l
 - `androidScheme` -> Configure the local scheme on Android. Default is `http`.
 
 For more information see the [Capacitor Docs](https://capacitorjs.com/docs/config#schema)
+
+# References
+
+The stack originates from [create-t3-app](https://create.t3.gg/).
