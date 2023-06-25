@@ -10,10 +10,9 @@ In addition, this repo added support to generate hybrid iOS and Android apps usi
 <div style="display:flex; flex-direction:row; padding: 5px;">
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
-
 </div>
 
-So you do your usual T3 development to make your awesome app, once you'r happy with it, maybe you wanna publish your app also for mobile users. Here are the steps you need to do: 
+Once you done with your Next.js app, if you also want to build iOS and Android apps from it, you cab follow this instructions:
 
 You need to run `sudo gem install cocoapods` in order to be able to use Capacitor on iOS.
 
