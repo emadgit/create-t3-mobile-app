@@ -5,6 +5,11 @@ A boilerplate based on [T3 Stack](https://create.t3.gg/) with support to make mo
 
 This is basically bootstrapped with `create-t3-app` so for all T3 part you can follow the official [Documentation](https://create.t3.gg/). In addition, this repo added support to generate hybrid iOS and Android apps using [Capacitorjs](https://capacitorjs.com/).
 
+<div style="display:flex; flex-direction:row; padding: 5px;">
+  <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
+    <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
+</div>
+
 So you do your usual T3 development to make your awesome app, once you'r happy with it, maybe you wanna publish your app also for mobile users. Here are the steps you need to do: 
 
 You need to run `sudo gem install cocoapods` in order to be able to use Capacitor on iOS. Once cocoapods installed, then follow these steps:
