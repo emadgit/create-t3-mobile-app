@@ -43,11 +43,18 @@ For more information see the [Capacitor Docs](https://capacitorjs.com/docs/confi
 
 # tRPC notes
 
-For communicate with the server from the mobile apps, Next.js application with tRPC must be deployed, then you need to set your server url domain in `capacitor.config.ts`, for example:
+For communicate with the server from the mobile apps, Next.js application with tRPC must be deployed, then you need to set your server url domain in `capacitor.config.ts`. here is an example for the config file:
 
 ```
-server: {
+const config: CapacitorConfig = {
+  appId: "com.example.myt3mobileapp",
+  appName: "myt3mobileapp",
+  webDir: "out",
+  server: {
     androidScheme: "https",
+    // For communicate with the server Next.js application with tRPC must be deployed, for example if you are using
+    // Vercel, url should be set to the domain YOURAPP.vercel.app
     url: "YOURAPP.vercel.app",
   },
+};
 ```
