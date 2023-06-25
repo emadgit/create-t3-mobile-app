@@ -1,7 +1,9 @@
 {
   "name": "create-t3-mobile-app",
   "version": "0.1.0",
-  "author": {"name": "Emad Dehnavi"},
+  "repository": {
+    "url": "https://github.com/emadgit/create-t3-mobile-app"
+  },
   "private": true,
   "scripts": {
     "build": "next build",
