@@ -5,7 +5,7 @@ A boilerplate based on [T3 Stack](https://create.t3.gg/) with support to make mo
 
 This repo is basically bootstrapped with `create-t3-app` so for all T3 related parts, you can follow the official [Documentation](https://create.t3.gg/) and if you are not familiar with T3, I suggest to watch Theo's great [Tutorial](https://youtu.be/YkOSUVzOAA4).
 
-In addition, this repo added support to generate hybrid iOS and Android apps using [Capacitorjs](https://capacitorjs.com/).
+In addition, this repo added support to generate iOS and Android apps using native runtime [Capacitorjs](https://capacitorjs.com/).
 
 <div style="display:flex; flex-direction:row; padding: 5px;">
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
