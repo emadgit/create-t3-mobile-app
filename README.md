@@ -12,7 +12,7 @@ In addition, this repo added support to generate iOS and Android apps using nati
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/android.png" style="width: fit-content;" /></div>
 </div>
 
-Once you done with your Next.js app, if you also want to build iOS and Android apps from it, you cab follow this instructions:
+Once you done with your Next.js app, if you also want to build iOS and Android apps from it, you can follow this instructions:
 
 You need to run `sudo gem install cocoapods` in order to be able to use Capacitor on iOS.
 
