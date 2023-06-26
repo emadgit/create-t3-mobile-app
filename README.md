@@ -1,6 +1,8 @@
 # Create T3 Mobile App
 A template repo based on [T3 Stack](https://create.t3.gg/) with support to make mobile apps for iOS and Android using [Capacitorjs](https://capacitorjs.com/). 
 
+ℹ️ When I say "mobile apps," I mean the mobile view of your web application. Don't expect all the fancy features you'd find in a native app, though. So, happy coding, and don't forget to prioritize the mobile-first strategy! 🚀
+
 ## What's next? How do I make an app with this?
 
 This repo is basically bootstrapped with `create-t3-app` so for all T3 related parts, you can follow the official [Documentation](https://create.t3.gg/) and if you are not familiar with T3, I suggest to watch Theo's great [Tutorial](https://youtu.be/YkOSUVzOAA4).
