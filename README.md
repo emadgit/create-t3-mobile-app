@@ -5,9 +5,9 @@ A template repo based on [T3 Stack](https://create.t3.gg/) with support to make 
 
 ## What's next? How do I make an app with this?
 
-This repo is basically bootstrapped with `create-t3-app` so for all T3 related parts, you can follow the official [Documentation](https://create.t3.gg/) and if you are not familiar with T3, I suggest to watch Theo's great [Tutorial](https://youtu.be/YkOSUVzOAA4).
+This repo is basically bootstrapped with `create-t3-app` so for all T3 related parts, you can follow the official [Documentation](https://create.t3.gg) and if you are not familiar with T3, I suggest to watch Theo's great [Tutorial](https://youtu.be/YkOSUVzOAA4).
 
-In addition, this repo added support to generate iOS and Android apps using native runtime [Capacitorjs](https://capacitorjs.com/).
+In addition, this repo added support to generate iOS and Android apps using native runtime [Capacitorjs](https://capacitorjs.com).
 
 <div style="display:flex; flex-direction:row; padding: 5px;">
     <div style="display: flex; width: fit-content;"><img src="https://github.com/emadgit/create-t3-mobile-app/blob/main/public/ios.png" style="width: fit-content;" /></div>
@@ -64,4 +64,4 @@ For more information see the [Capacitor Docs](https://capacitorjs.com/docs/confi
 
 # References
 
-The stack originates from [create-t3-app](https://create.t3.gg/).
+The stack originates from [create-t3-app](https://create.t3.gg).
